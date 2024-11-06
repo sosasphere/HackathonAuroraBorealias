@@ -8,8 +8,13 @@ nvcc --version
 
 
 Torch Debugging:
-pip uninstall torch
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+* pip uninstall torch
+* pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+
+* Then :
+* conda create --name llm_gpu_env python=3.10
+* conda activate llm_gpu_env
+* conda install -c conda-forge cudatoolkit=11.8
 
 Test GPU Availability:
 
